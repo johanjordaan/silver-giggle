@@ -3,9 +3,7 @@ import time
 
 GPIO.setmode(GPIO.BCM)
 pin = 18
-C = 380/float(1000)  #uF
-
-
+C = 420/float(1000)  #uF
 
 
 def rc_time(pin):    
@@ -38,7 +36,9 @@ try:
     count = 0
     last_state = False
     while True:
-        current_state = r(18)<8000
+        rval = r(18)
+        #print(rval)
+        current_state = rval<13000
         if(current_state != last_state):
             last_state = current_state
             if(current_state == False):
