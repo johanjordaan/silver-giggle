@@ -31,7 +31,7 @@ from datetime import datetime
 def add_event(type):
     now = datetime.now()
     formatted_date = now.strftime('%Y-%m-%d %H:%M:%S')
-    query = "INSERT INTO users (type,dt) VALUES (%s, %s)"
+    query = "INSERT INTO event (type,dt) VALUES (%s, %s)"
     values = (type, formatted_date)
     cursor.execute(query, values)
     db.commit()
