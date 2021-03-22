@@ -22,6 +22,10 @@ cursor.execute("USE %s"%(config.database))
 
 cursor.execute("CREATE TABLE IF NOT EXISTS event (type VARCHAR(255), dt DATETIME)")
 
+import os
+import time
+os.environ['TZ'] = 'Australia/Sydney'
+time.tzset()
 
 from datetime import datetime
 def add_event(type):
