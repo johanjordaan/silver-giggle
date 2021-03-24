@@ -133,3 +133,4 @@ dmypy.json
 config.py
 .Rproj.user
 nohup.out
+config.yml

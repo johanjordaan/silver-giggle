@@ -1,0 +1,17 @@
+default:
+  dataconnection:
+    driver: 'MySQL ODBC 8.0 ANSI Driver'
+    server: ''
+    uid: ''
+    pwd: ''
+    port: 3306
+    database: 'silver_giggle'
+    
+shinyapps:
+  dataconnection:
+    driver: 'MySQL'
+    server: ''
+    uid: ''
+    pwd: ''
+    port: 3306
+    database: 'silver_giggle'
