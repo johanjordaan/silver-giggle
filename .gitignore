@@ -132,3 +132,4 @@ dmypy.json
 .mysql-creds
 config.py
 .Rproj.user
+nohup.out
