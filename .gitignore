@@ -131,3 +131,4 @@ dmypy.json
 # Creds
 .mysql-creds
 config.py
+nohup.out
