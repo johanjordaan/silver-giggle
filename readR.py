@@ -40,6 +40,7 @@ try:
     while True:
         rval = r(18)
         current_state = rval<13000
+	print rval
         if(current_state != last_state):
             last_state = current_state
             if(current_state == False):
